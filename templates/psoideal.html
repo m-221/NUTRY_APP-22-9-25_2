@@ -1,0 +1,46 @@
+{% extends 'base.html'%} 
+{% block titulo %}Calculadora de Peso Ideal{% endblock %}
+
+
+{% block contenido %}
+
+<div class="container my-5 col-4 mt-4">
+
+    <div class="card p-4 shadow-lg rounded-4" style="background-color: #3bb2f7ff;">
+        <h2 class="text-center mb-4">Calculadora de Peso Corporal Ideal</h2>
+
+        <div class="alert alert-info mt-4" role="alert">
+            <h6 class="text-center">El peso ideal es el rango de peso que se considera más saludable para una persona según su estatura, edad y composición corporal. No es un número exacto, sino un intervalo donde el cuerpo funciona mejor, disminuye el riesgo de enfermedades y se mantiene un equilibrio entre grasa, músculo y bienestar general. Es una referencia para evaluar el estado nutricional, pero siempre debe ajustarse a cada persona.</h6>
+        </div>
+
+    
+        <form action="/peso_ideal" method="POST">
+
+            <div class="mb-3">
+                <label class="form-label">Altura (cm):</label>
+                <input type="number" class="form-control" name="altura" min="1" placeholder="Ejemplo: 165" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Sexo:</label>
+                <select class="form-select" name="sexo" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                </select>
+            </div>
+             <div class="d-grid mt-3">
+            <button type="submit" class="btn btn-secondary btn-lg rounded-4">Calcular</button>
+            </div>
+        </form>
+    </div>
+</div>
+        {% if resultado is defined %}
+        <div class="alert alert-info mt-4" role="alert">
+            <h4>Tu peso corporal ideal es: {{ resultado }} kg</h4>
+        </div>
+        {% endif %}
+
+
+
+{% endblock %}

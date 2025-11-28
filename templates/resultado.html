@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% block titulo %}
+<h1 class="text-center mt-3">Recetas con "{{ ingredientes }}"</h1>
+{% endblock %}
+
+{% block contenido %}
+
+<div class="container my-4">
+
+    {% if recetas and recetas|length > 0 %}
+    <div class="row g-4">
+
+        {% for receta in recetas %}
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+
+                <img src="{{ receta.image }}" 
+                    class="card-img-top"
+                    alt="{{ receta.title }}">
+
+                <div class="card-body">
+                    <h5 class="card-title">{{ receta.title }}</h5>
+
+                    {% if receta.usedIngredients %}
+                    <h6>Ingredientes usados:</h6>
+                    <ul class="small">
+                        {% for ing in receta.usedIngredients %}
+                        <li>{{ ing.original }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+
+                    {% if receta.missedIngredients %}
+                    <h6>Ingredientes faltantes:</h6>
+                    <ul class="small text-danger">
+                        {% for ing in receta.missedIngredients %}
+                        <li>{{ ing.original }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+
+                    <a href="https://spoonacular.com/recipes/{{ receta.title | urlencode }}-{{ receta.id }}"
+                    target="_blank"
+                    class="btn btn-primary btn-sm  mt-2">
+                    Ver receta
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+    {% else %}
+    <div class="alert alert-warning text-center">
+        No se encontraron recetas.
+    </div>
+    {% endif %}
+
+</div>
+
+{% endblock %}
+
+
+{% extends "base.html" %}
+
+{% block titulo %}
+<h1 class="text-center mt-3">Recetas con "{{ ingredientes }}"</h1>
+{% endblock %}
+
+{% block contenido %}
+
+<div class="container my-4">
+
+    {% if recetas and recetas|length > 0 %}
+    <div class="row g-4">
+
+        {% for receta in recetas %}
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+
+                <img src="{{ receta.image }}" 
+                     class="card-img-top"
+                     alt="{{ receta.title }}">
+
+                <div class="card-body">
+                    <h5 class="card-title">{{ receta.title }}</h5>
+
+                    {% if receta.usedIngredients %}
+                    <h6>Ingredientes usados:</h6>
+                    <ul class="small">
+                        {% for ing in receta.usedIngredients %}
+                        <li>{{ ing.original }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+
+                    {% if receta.missedIngredients %}
+                    <h6>Ingredientes faltantes:</h6>
+                    <ul class="small text-danger">
+                        {% for ing in receta.missedIngredients %}
+                        <li>{{ ing.original }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+
+                    <a href="https://spoonacular.com/recipes/{{ receta.title | urlencode }}-{{ receta.id }}"
+                       target="_blank"
+                       class="btn btn-primary btn-sm  mt-2">
+                       Ver receta
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+    {% else %}
+    <div class="alert alert-warning text-center">
+        No se encontraron recetas.
+    </div>
+    {% endif %}
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block contenido %}
+
+<div class="container my-5 d-flex justify-content-center">
+    <div class="col-12 col-md-6 col-lg-5">
+
+        <div class="card shadow rounded-4 p-4" style="background-color: #3bb2f7ff;">
+            <h2 class="text-center mb-4">Calculadora de Macronutrientes</h2>
+
+            <div class="alert alert-info mt-4" role="alert">
+                <h6 class="text-center">Los macronutrientes son los nutrientes que el cuerpo necesita en grandes cantidades para funcionar correctamente y mantener la salud. Incluyen proteínas, carbohidratos y grasas, que proporcionan energía y son esenciales para el crecimiento, la reparación de tejidos y diversas funciones corporales. Calcular la cantidad adecuada de cada macronutriente según tus calorías diarias ayuda a optimizar tu dieta y alcanzar tus objetivos de salud y fitness.</h6>
+            </div>
+
+
+            <form action="/macronutrientes" method="POST">
+                
+                <div class="mb-3">
+                    <label class="form-label">Calorías diarias:</label>
+                    <input type="number" class="form-control" name="calorias" min="1" placeholder="Ejemplo: 2000" required>
+                </div>
+
+                <div class="d-grid mt-3">
+                    <button class="btn btn-secondary mt-2" type="submit">Calcular</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+{% if calorias is defined %}
+<div class="container my-4">
+    <div class="alert alert-danger text-center" role="alert">
+        <h4>
+            Resultados para {{ calorias }} calorías:<br><br>
+            Proteínas: <strong>{{ proteina }} g</strong><br>
+            Carbohidratos: <strong>{{ carbos }} g</strong><br>
+            Grasas: <strong>{{ grasas }} g</strong>
+        </h4>
+    </div>
+</div>
+{% endif %}
+
+{% endblock %}

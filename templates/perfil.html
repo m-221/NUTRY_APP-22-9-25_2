@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block contenido %}
+
+
+        <div class=" text-center bg-light col-8 mx-auto text-dark p-3 rounded">
+            <h3 class="mb-0">👤 Perfil de {{ usuario.nombre }}</h3>
+        </div>
+
+        <div class="container col-8 mx-auto p-4 rounded" style="background-color: #3bb2f7ff;">
+
+            <h4 class="text-center mb-3">Datos personales</h4>
+
+            <ul class="list-group mb-4">
+                <li class="list-group-item"><strong>Nombre:</strong> {{ usuario.nombre }} {{ usuario.apellido }}</li>
+                <li class="list-group-item"><strong>Fecha de nacimiento:</strong> {{ usuario.fecha }}</li>
+                <li class="list-group-item"><strong>Género:</strong> {{ usuario.genero }}</li>
+            </ul>
+            <h4 class="text-center mb-3">Datos físicos</h4>
+
+            <ul class="list-group mb-4">
+                <li class="list-group-item"><strong>Peso:</strong> {{ usuario.peso }} kg</li>
+                <li class="list-group-item"><strong>Altura:</strong> {{ usuario.altura }} cm</li>
+                <li class="list-group-item"><strong>Actividad:</strong> {{ usuario.actividad }}</li>
+            </ul>
+
+        </div>
+
+
+{% endblock %}
+
+
+
+
+  

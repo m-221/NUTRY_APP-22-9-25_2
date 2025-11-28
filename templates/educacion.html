@@ -1,0 +1,379 @@
+{% extends "base.html" %}
+
+{% block titulo%} <h1 class="text-center mt-3">SECCION EDUCATIVA</h1> {% endblock %}
+{% block contenido %}
+    <div class="container my-5 mb-5">
+        <div class="card shadow-lg p-4  rounded-4 mx-auto" style="background-color: #3bb2f7ff;">
+            <h2 class="text-center  fw-bold">Información sobre Nutrición y Salud</h2>
+            <p>Bienvenido a la sección educativa de nuestra aplicación de nutrición. Aquí encontrarás información valiosa sobre diversos temas relacionados con la nutrición, la salud y el bienestar. Nuestro objetivo es proporcionarte conocimientos que te ayuden a tomar decisiones informadas sobre tu alimentación y estilo de vida.</p>
+
+            <h3 class="mt-4">Importancia de una Alimentación Balanceada</h3>
+            <p>Una alimentación balanceada es fundamental para mantener una buena salud. Incluye una variedad de alimentos de todos los grupos alimenticios, como frutas, verduras, proteínas, carbohidratos y grasas saludables. Una dieta equilibrada proporciona los nutrientes necesarios para el funcionamiento óptimo del cuerpo.</p>
+
+            <h3 class="mt-4">Consejos para una Vida Saludable</h3>
+            <ul>
+                <li>Mantente hidratado bebiendo suficiente agua durante el día.</li>
+                <li>Realiza actividad física regularmente para fortalecer tu cuerpo y mente.</li>
+                <li>Duerme lo suficiente para permitir que tu cuerpo se recupere y funcione correctamente.</li>
+                <li>Evita el consumo excesivo de alimentos procesados y azúcares añadidos.</li>
+                <li>Consulta a profesionales de la salud para obtener asesoramiento personalizado.</li>
+            </ul>
+            <h3 class="mt-4">Recursos Adicionales</h3>
+
+            <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        🥫¿Cómo leer las etiquetas nutricionales?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+       <p> <strong>Entender las etiquetas nutricionales es clave para tomar decisiones informadas sobre los alimentos que consumes.</strong></p> 
+        <ul><strong>Aquí te explicamos los puntos más importantes a considerar al leer una etiqueta nutricional:</strong> </ul>
+    
+
+    <p><strong>1️⃣ Tamaño de la porción (lo primero que debes revisar):</strong><br>
+    Indica cuánto representa una porción del producto (por ejemplo: 30 g, 1 taza, 3 galletas).<br>
+    Muchas veces el envase trae más de una porción, así que si te lo comes todo, debes multiplicar calorías y nutrientes.</p>
+
+    <p><strong>👉 Ejemplo:</strong><br>
+    Si una porción es 100 kcal y el paquete trae 2 porciones, entonces todo el paquete tiene 200 kcal.</p>
+
+    <hr>
+
+    <p><strong>2️⃣ Calorías por porción</strong><br>
+    Indican cuánta energía aporta lo que vas a consumir.  
+    Si comes más porciones, las calorías aumentan.  
+    Útil si estás controlando peso o siguiendo una dieta.</p>
+
+    <hr>
+
+    <p><strong>3️⃣ Nutrientes a limitar</strong><br>
+    Estos son los que debes consumir con moderación, ya que en exceso pueden afectar tu salud:</p>
+
+    <ul>
+        <li><strong>Grasas saturadas:</strong> aumentan el colesterol LDL (malo).</li>
+        <li><strong>Sodio:</strong> demasiado puede elevar la presión arterial.</li>
+        <li><strong>Azúcares añadidos:</strong> contribuyen a obesidad, diabetes y caries.</li>
+    </ul>
+
+    <hr>
+
+    <p><strong>4️⃣ Nutrientes a consumir</strong><br>
+    Son beneficiosos para tu salud y debes asegurarte de incluirlos:</p>
+
+    <ul>
+        <li><strong>Fibra dietética:</strong> ayuda a la digestión y previene estreñimiento.</li>
+        <li><strong>Vitaminas y minerales:</strong> esenciales para funciones del cuerpo.</li>
+    </ul>
+
+    <hr>
+
+    <p><strong>5️⃣ % Valores diarios (%VD)</strong><br>
+    Indican qué porcentaje de la cantidad diaria recomendada aporta una porción, basado en 2000 kcal.</p>
+
+    <p><strong>👉 Guía rápida:</strong></p>
+    <ul>
+        <li><strong>5% o menos:</strong> bajo en ese nutriente.</li>
+        <li><strong>20% o más:</strong> alto en ese nutriente.</li>
+    </ul>
+
+    <hr>
+
+    <p><strong>6️⃣ Lista de ingredientes</strong><br>
+    Es muy importante revisarla. Los ingredientes están ordenados de mayor a menor cantidad.</p>
+
+    <ul>
+        <li>Si los primeros son azúcar, jarabe de maíz, grasas o harinas refinadas → no es muy saludable.</li>
+        <li>Si ves nombres difíciles de pronunciar → está muy procesado.</li>
+    </ul>
+
+    <p><strong>👉 Tip:</strong> Mientras menos ingredientes tenga, normalmente mejor.</p>
+
+    <hr>
+
+     <p><strong>7️⃣ Sellos de advertencia (en México)</strong><br>
+    Algunos productos tienen sellos que indican si son altos en calorías, azúcares, grasas saturadas o sodio. Estos sellos te ayudan a identificar rápidamente alimentos que debes consumir con moderación.</p>
+
+     <ul><strong>En México encontrarás sellos como:</strong><br>
+        <li><strong>EXCESO CALORÍAS</strong> </li>
+        <li><strong>EXCESO AZÚCARES</strong></li>
+        <li><strong>EXCESO GRASAS SATURADAS</strong></li>
+        <li><strong>EXCESO SODIO</strong></li>
+        </ul>
+        <p><strong>👉 Recuerda:</strong></p>
+       Si un producto tiene varios sellos, consume con moderación.
+      </div>
+
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        🧪 Mitos y verdades sobre las dietas de moda
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+  <div class="accordion-body">
+
+    <ul><strong>Las dietas de moda suelen prometer resultados rápidos, pero muchas veces están basadas en información incompleta o falsa. Aquí te dejo los mitos más comunes y la realidad detrás de ellos.</strong></ul>
+    <br>
+
+    <strong>❌ MITO 1: “Las dietas detox desintoxican el cuerpo”</strong><br>
+    <strong>✅ VERDAD:</strong> Nuestro cuerpo ya tiene órganos (hígado y riñones) que eliminan toxinas. Las dietas detox pueden ser peligrosas si son muy restrictivas y no aportan los nutrientes necesarios.
+    <br>
+    <hr>
+
+   
+    <strong>❌ MITO 2: “La dieta keto quema grasa de inmediato”</strong><br>
+    <strong>✅ VERDAD:</strong> La dieta keto causa pérdida de peso rápida al inicio, pero principalmente por agua, no por grasa. A largo plazo puede ayudar, pero es difícil de mantener y no es para todos.
+    <br>
+    <hr>
+
+    <strong>❌ MITO 3: “Las dietas sin carbohidratos son más saludables”</strong><br>
+    <strong>✅ VERDAD:</strong> Los carbohidratos son la principal fuente de energía. Quitarlos totalmente puede causar cansancio, mal humor y baja concentración. Lo ideal es consumir carbohidratos complejos.
+    <br>
+    <hr>
+
+    <strong>❌ MITO 4: “Mientras menos comas, más rápido bajas de peso”</strong><br>
+    <strong>✅ VERDAD:</strong> Comer muy poco ralentiza el metabolismo y provoca efecto rebote. Lo mejor es un déficit calórico moderado y sostenible.
+    <br>
+    <hr>
+
+   
+    <strong>❌ MITO 5: “Las pastillas quemagrasa funcionan”</strong><br>
+    <strong>✅ VERDAD:</strong> No existe una pastilla que queme grasa milagrosamente. Muchas pueden dañar el hígado o causar taquicardia. La pérdida de grasa real requiere buena alimentación, ejercicio y constancia.
+    <br>
+    <hr>
+
+    <strong>❌ MITO 6: “El ayuno intermitente sirve para todos”</strong><br>
+    <strong>✅ VERDAD:</strong> Puede ayudar a algunas personas, pero no es mágico y puede causar ansiedad o atracones en otras.
+    <br>
+    <hr>
+
+   
+    <strong>❌ MITO 7: “Los productos light te hacen bajar de peso”</strong><br>
+    <strong>✅ VERDAD:</strong> Light no significa saludable. Muchas veces reducen azúcar o grasa pero aumentan otros ingredientes. Lo mejor es leer la etiqueta.
+    <br>
+    <hr>
+
+ 
+    <strong>❌ MITO 8: “Las dietas rápidas son efectivas”</strong><br>
+    <strong>✅ VERDAD:</strong> Bajar muy rápido suele ser pérdida de agua y músculo, no de grasa. Además, las dietas extremas generan rebote y no son sostenibles.
+    <br>
+    <hr>
+
+    <strong>🌟 Conclusión</strong><br>
+    <strong>Antes de seguir una dieta de moda, investiga y consulta a un profesional de la salud. La clave para una vida saludable es una alimentación balanceada, actividad física regular y hábitos sostenibles a largo plazo.</strong>
+    <strong>Las dietas de moda pueden sonar atractivas, pero la mayoría están basadas en mitos y expectativas irreales.</strong><br>
+    <strong>Infórmate bien y prioriza tu salud por encima de las tendencias.</strong> <br>
+    <strong>La mejor dieta siempre será:<strong><strong><br>
+
+        <ul>
+        <li> <strong>✔️ Equilibrada:</strong><br>
+        <li><strong>✔️ Flexible</strong> </li>
+        <li><strong>✔️ Basada en alimentos reales</strong></li>
+        <li><strong>✔️ Adaptada a tu estilo de vida</strong></li>
+        <li><strong>✔️ Sostenible a largo plazo</strong></li>
+        </ul>
+  </div>
+</div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        📋Guías sobre macronutrientes y su función
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="container my-4">
+
+  <p><strong>Los macronutrientes</strong> son los nutrientes que nuestro cuerpo necesita en <strong>grandes cantidades</strong> para funcionar correctamente y mantener energía. Se dividen en carbohidratos, proteínas y grasas, a los que a veces se suma el agua como macronutriente esencial.</p>
+
+
+  <h4>1️⃣ Carbohidratos (hidratos de carbono)</h4>
+  <p><strong>Función principal:</strong> Fuente principal de energía del cuerpo.</p>
+  <p>Se convierten en glucosa, que el cuerpo usa como combustible para cerebro, músculos y sistema nervioso.</p>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Tipo</th>
+        <th>Ejemplos</th>
+        <th>Beneficio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Complejos</td>
+        <td>Avena, arroz integral, pan integral, legumbres</td>
+        <td>Energía sostenida, mayor fibra</td>
+      </tr>
+      <tr>
+        <td>Simples</td>
+        <td>Azúcar, dulces, refrescos</td>
+        <td>Energía rápida, corta duración</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><em>Recomendación:</em> Prioriza carbohidratos complejos y limita azúcares añadidos.</p>
+  <hr>
+
+ 
+  <h4>2️⃣ Proteínas</h4>
+  <p><strong>Función principal:</strong> Construir y reparar tejidos, músculos y órganos.</p>
+  <p>Componentes básicos: aminoácidos (algunos esenciales que debemos obtener de la dieta). También ayudan en la producción de enzimas, hormonas y anticuerpos.</p>
+  <p><strong>Fuentes principales:</strong></p>
+  <ul>
+    <li>Animales: carne, pollo, pescado, huevos, lácteos</li>
+    <li>Vegetales: legumbres, tofu, frutos secos, semillas</li>
+  </ul>
+  <p><em>Beneficio extra:</em> Ayudan a sentir saciedad.</p>
+  <hr>
+
+  
+  <h4>3️⃣ Grasas</h4>
+  <p><strong>Función principal:</strong> Reserva de energía, protección de órganos y absorción de vitaminas liposolubles (A, D, E, K).</p>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Tipo</th>
+        <th>Ejemplos</th>
+        <th>Efecto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Saturadas</td>
+        <td>Mantequilla, queso, carnes rojas</td>
+        <td>Consumo moderado</td>
+      </tr>
+      <tr>
+        <td>Insaturadas</td>
+        <td>Aceite de oliva, aguacate, frutos secos</td>
+        <td>Salud cardiovascular</td>
+      </tr>
+      <tr>
+        <td>Trans</td>
+        <td>Productos procesados, bollería industrial</td>
+        <td>Evitar, dañan corazón</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><strong>Nota:</strong> Aunque muchas personas temen las grasas, son esenciales si provienen de fuentes saludables.</p>
+  <hr>
+
+
+  <h4>4️⃣ Agua</h4>
+  <p><strong>Función principal:</strong> Mantener hidratación, regular temperatura, transportar nutrientes y eliminar desechos.</p>
+  <p><strong>Recomendación:</strong> Beber entre 1.5 y 2 litros al día según actividad física y clima.</p>
+  <hr>
+
+ 
+  <h4>💡 Resumen rápido</h4>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Macronutriente</th>
+        <th>Función principal</th>
+        <th>Ejemplos</th>
+        <th>Nota</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Carbohidratos</td>
+        <td>Energía rápida y sostenida</td>
+        <td>Arroz, avena, frutas</td>
+        <td>Prefiere complejos</td>
+      </tr>
+      <tr>
+        <td>Proteínas</td>
+        <td>Reparación y construcción de tejidos</td>
+        <td>Carne, huevos, legumbres</td>
+        <td>Mantener ingesta diaria</td>
+      </tr>
+      <tr>
+        <td>Grasas</td>
+        <td>Energía y absorción de vitaminas</td>
+        <td>Aceite de oliva, aguacate</td>
+        <td>Evitar trans y moderar saturadas</td>
+      </tr>
+      <tr>
+        <td>Agua</td>
+        <td>Hidratación y transporte de nutrientes</td>
+        <td>Agua, infusiones</td>
+        <td>Fundamental para todo</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+    </div>
+    </div>
+  </div>
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+      💧 Hidratación y nutrientes esenciales
+    </button>
+  </h2>
+  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+
+      <h4>1️⃣ Hidratación</h4>
+      <ul>
+        <li>Mantiene la temperatura corporal.</li>
+        <li>Transporta nutrientes y oxígeno a las células.</li>
+        <li>Facilita la eliminación de desechos.</li>
+        <li>Ayuda a la digestión y absorción de alimentos.</li>
+      </ul>
+      <p><strong>Recomendación:</strong> Beber entre <em>1.5 y 2 litros de agua al día</em>.</p>
+      <hr>
+
+      <h4>2️⃣ Vitaminas</h4>
+      <ul>
+        <li><strong>Vitamina A:</strong> visión, piel y sistema inmune → zanahoria, camote, espinaca.</li>
+        <li><strong>Vitaminas B (complejo):</strong> metabolismo de energía, sistema nervioso → cereales integrales, legumbres, carnes, huevos.</li>
+        <li><strong>Vitamina C:</strong> sistema inmune, antioxidante → cítricos, kiwi, pimientos.</li>
+        <li><strong>Vitamina D:</strong> salud ósea → exposición solar, pescados grasos, huevos.</li>
+        <li><strong>Vitamina E:</strong> antioxidante → frutos secos, semillas, aceites vegetales.</li>
+        <li><strong>Vitamina K:</strong> coagulación sanguínea → verduras de hoja verde, brócoli.</li>
+      </ul>
+      <hr>
+
+      <h4>3️⃣ Minerales</h4>
+      <ul>
+        <li><strong>Calcio:</strong> fortalece huesos y dientes → lácteos, almendras, tofu.</li>
+        <li><strong>Hierro:</strong> formación de glóbulos rojos → carne roja, legumbres, espinaca.</li>
+        <li><strong>Magnesio:</strong> función muscular y nerviosa → frutos secos, semillas, legumbres.</li>
+        <li><strong>Zinc:</strong> sistema inmune y cicatrización → carne, mariscos, semillas.</li>
+        <li><strong>Potasio:</strong> equilibrio de líquidos y presión arterial → plátano, papas, espinaca.</li>
+        <li><strong>Sodio:</strong> equilibrio de líquidos → moderar su consumo.</li>
+      </ul>
+      <hr>
+
+      <h4>4️⃣ Antioxidantes y fitonutrientes</h4>
+      <p>Protegen las células del daño oxidativo, reducen inflamación y riesgo de enfermedades.</p>
+      <p><strong>Ejemplos:</strong> Polifenoles (té verde, cacao), carotenoides (zanahoria, tomate), flavonoides (cítricos, frutos rojos).</p>
+
+    </div> 
+  </div> 
+</div> 
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+{% endblock %}
+    
+        

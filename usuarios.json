@@ -1,0 +1,52 @@
+{
+    "fernandainfantepedroza040819@gmail.com": {
+        "nombre": "FERNANDA",
+        "apellido": "infante",
+        "fecha": "19/4/1999",
+        "genero": "Mujer",
+        "password": "FERNANDA_19",
+        "actividad": "moderado",
+        "peso": "333",
+        "altura": "453"
+    },
+    "jsoltero236@gmail.com": {
+        "nombre": "Diana",
+        "apellido": "infante",
+        "fecha": "7/9/1991",
+        "genero": "Mujer",
+        "password": "6565922439",
+        "actividad": "ligero",
+        "peso": "100",
+        "altura": "1.5"
+    },
+    "melanie@gmail.com": {
+        "nombre": "FERNANDA",
+        "apellido": "infante",
+        "fecha": "19/4/1999",
+        "genero": "Mujer",
+        "password": "FERNANDA_19",
+        "actividad": "moderado",
+        "peso": "333",
+        "altura": "453"
+    },
+    "melinaaa@gmail.com": {
+        "nombre": "melina",
+        "apellido": "pedroza",
+        "fecha": "7/6/1937",
+        "genero": "Mujer",
+        "password": "melina_22",
+        "actividad": "sedentario",
+        "peso": "222",
+        "altura": "322"
+    },
+    "melina@gmail.com": {
+        "nombre": "MELINA",
+        "apellido": "INFANTE",
+        "fecha": "4/5/1934",
+        "genero": "Mujer",
+        "password": "melina_22",
+        "actividad": "moderado",
+        "peso": "33",
+        "altura": "322"
+    }
+}

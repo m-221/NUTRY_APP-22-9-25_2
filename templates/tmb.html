@@ -1,0 +1,61 @@
+
+{% extends "base.html" %}
+{% block titulo %}
+
+{% endblock %}
+
+{% block contenido %}
+<div class="container  col-4 mt-5" style="">
+    <div class="card p-4 my-5 shadow rounded-4 " style="background-color: #3bb2f7ff;">
+        <h2 class="text-center mb-4">Calculadora de Tasa Metabólica Basal (TMB)</h2>
+
+            <div class="alert alert-info mt-4" role="alert">
+                <h6 class="text-center">La Tasa Metabólica Basal (TMB) es la cantidad mínima de calorías que tu cuerpo necesita para mantener funciones vitales como respirar, circular la sangre y regular la temperatura mientras estás en reposo. Es esencial para entender cuántas calorías debes consumir diariamente para mantener, perder o ganar peso según tus objetivos.</h6>
+            </div>
+
+        <form method="POST" action="/tmb">
+
+            <div class="mb-3">
+                <label class="form-label">Sexo</label>
+                <select class="form-select" name="sexo" required>
+                    <option value="">Selecciona...</option>
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Edad (años)</label>
+                <input type="number" class="form-control" name="edad" min="1" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Peso (kg)</label>
+                <input type="number" class="form-control" name="peso" step="0.1" min="1" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Altura (cm)</label>
+                <input type="number" class="form-control" name="altura" step="0.1" min="1" required>
+            </div>
+             <div class="d-grid mt-3">
+            <button type="submit" class="btn btn-secondary rounded-4 mt-3">
+                Calcular TMB
+            </button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+{% if tmb is defined %}
+<div class="container my-4">
+    <div class="alert alert-info text-center" role="alert">
+        <h4> (TMB) es: {{ tmb }} kcal/día</h4>
+    </div>
+    </div>
+</div>
+{% endif %}
+
+{% endblock %}

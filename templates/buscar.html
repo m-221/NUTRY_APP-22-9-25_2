@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block contenido %}
+
+<div class="container-fluid d-flex justify-content-center ">
+    <div class="card shadow-lg  bg-primary-subtle p-4 rounded-4" style="background-color: #3d9debff" >
+        
+        <h2 class="text-center  mb-4 fw-bold" style="">
+            Buscar Recetas por Ingredientes
+        </h2>
+
+        <form action="/buscador" method="GET" >
+            <div class="mb-3">
+                <label for="ingredientes" class="form-label fw-semibold">Ingredientes</label>
+                <input 
+                    type="text" 
+                    class="form-control form-control-lg rounded-3" 
+                    id="ingredientes" 
+                    name="ingredientes" 
+                    placeholder="Ejemplo:chicken, rice, apple "
+                    required>
+                <small class="text-muted">
+                    Escribe varios ingredientes separados por comas.
+                </small>
+            </div>
+
+            <button 
+                type="submit" 
+                class="btn  bg-success py-2 rounded-3 fw-semibold"
+                style="">
+                🔍 Buscar Recetas
+            </button>
+        </form>
+    </div>
+</div>
+{% endblock %}
