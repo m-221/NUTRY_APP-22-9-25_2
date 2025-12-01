@@ -6,7 +6,6 @@ import os
 app = Flask(__name__)
 app.secret_key = 'melyyyyaaasdwwd'
 
-API_URL = 'https://api.spoonacular.com/recipes/findByIngredients'
 API_KEY = '923b514b2c604404954302eaebfea6fd'
 API_URL = 'https://api.spoonacular.com/recipes/findByIngredients'
 
@@ -179,18 +178,6 @@ def buscar():
         return redirect("/iniciar_sesion")
     return render_template("buscar.html")
 
-@app.route('/buscador', methods=['GET'])
-def buscar_ingredientes():
-    
-    ingredientes = request.args.get("ingredientes", "")
-    if ingredientes.strip() == "":
-        return render_template("buscar.html", error="Escribe uno o más ingredientes.")
-
-    recetas = recetas_por_ingredientes(ingredientes)
-
-    return render_template("resultado.html",recetas=recetas,ingredientes=ingredientes)
-
-
 
 
 @app.route('/buscador', methods=['GET'])
@@ -203,6 +190,8 @@ def buscar_ingredientes():
     recetas = recetas_por_ingredientes(ingredientes)
 
     return render_template("resultado.html",recetas=recetas,ingredientes=ingredientes)
+
+
 
 
 

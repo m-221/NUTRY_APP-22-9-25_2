@@ -19,8 +19,7 @@
 **melanie fernanda pedroza infante 
 
  ![my](https://github.com/user-attachments/assets/00bb44d7-2b80-4e9e-a066-6b384385dc42)
-    <img src="{{url_for('static', filename= 'img/ft.jpg')}}" class="rounded float-start p-3" alt="comida" weight="300" height="350">
-                </div>
+  
                 
          
 

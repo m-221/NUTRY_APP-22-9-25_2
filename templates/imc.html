@@ -33,9 +33,26 @@
 
 {% if imc is defined and clasificacion is defined %}
 <div class="container  my-4">
-    <div class="alert  alert-danger text-center" role="alert">
+    <div class="alert  alert-info text-center" role="alert">
         <h4>Tu IMC es: {{ imc }}</h4>
         <p>Clasificación: {{ clasificacion }}</p>
+        {% if clasificacion == 'Bajo peso' %}
+         <div class="d-flex justify-content-center gap-4 my-4">
+             <img src="{{ url_for('static', filename='img/bajo.png') }}" alt="Bajo Peso " width="400">
+         </div>
+         {% elif clasificacion == 'Normal' %}
+            <div class="d-flex justify-content-center  gap-4 my-4">
+             <img src="{{ url_for('static', filename='img/normal.jpg') }}" alt="Peso Normal" width="400">
+            </div>
+         {% elif clasificacion == 'Sobrepeso' %}
+            <div class="d-flex justify-content-center  gap-4 my-4">
+              <img src="{{ url_for('static', filename='img/subido.jpg') }}" alt="Sobrepeso" width="400">
+            </div>
+         {% elif clasificacion == 'Obesidad' %}
+            <div class="d-flex justify-content-center  gap-4 my-4">
+               <img src="{{ url_for('static', filename='img/obeso.jpg') }}" alt="Obesidad" width="400">
+            </div>
+            {% endif %}
     </div>
 </div>
 {% endif %}

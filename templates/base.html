@@ -30,7 +30,6 @@
                     </li>
 
                     <li class="nav-item">
-<<<<<<< HEAD
                         <a class="nav-link" href="/educacion">parte informativa</a>
                     </li>
 
@@ -60,7 +59,7 @@
                         </ul>
                     </div>
 
-                   
+                    
 
                     <li class="nav-item">
                         <a class="nav-link" href="/descargables">descargables</a>
@@ -73,42 +72,12 @@
                     <li class="nav-item">
                         <a class="nav-link text-danger" href="/logout">Cerrar sesión</a>
                     </li>
-
-=======
-                            <a class="nav-link " href="/educacion">parte informativa</a>
-
-                        </li>  
-                        </li> 
-                        <div class="dropdown">
-<button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    calculadoras
-</button>
-<ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/calcular">INDICE DE MASA CORPORAL</a></li>
-    <li><a class="dropdown-item" href="/tmb">TASA METABOLICA BASAL</a></li>
-    <li><a class="dropdown-item" href="/macronutrientes">MACRONUTRIENTES</a></li>
-    <li><a class="dropdown-item" href="/peso_ideal">PESO IDEAL</a></li>
-    <li><a class="dropdown-item" href="/gct">GASTO CALORICO TOTAL</a></li>
-</ul>
-</div>
-                        <li class="nav-item">
-                            <a class="nav-link " href="/buscar">buscador por ingredientes</a>
-                        </li>  
-                        <li class="nav-item">
-                            <a class="nav-link " href="/descargables">descargables</a>
-                        </li> 
-                    {% if not session.get('usuario') %}
-                        <li class="nav-item">
-                            <a class="nav-link" href="/login">Iniciar sesión</a>
-                        </li>
->>>>>>> 681a97998a6342ea5686dfa11da84b33b901e894
-                    {% else %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="/iniciar_sesion">Iniciar sesión</a>
-                    </li>
-                    {% endif %}
-
+                     {% else %}
+                 
+                           
                 </ul>
+                 {% endif %}
+
             </div>
         </div>
     </nav>
