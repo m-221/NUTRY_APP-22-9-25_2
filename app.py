@@ -25,23 +25,7 @@ def recetas_por_ingredientes(ingredientes):
 
     return respuesta.json()  
 
-
-
-def recetas_por_ingredientes(ingredientes):
-    params = {
-        "apiKey": API_KEY,
-        "ingredients": ingredientes,  
-        "number": 15,
-        "ranking": 1,                
-        "ignorePantry": True   
-    }      
-
-    respuesta = requests.get(API_URL, params=params)
-
-    if respuesta.status_code != 200:
-        return []
-
-    return respuesta.json()  
+ 
 
 USUARIOS_FILE = "usuarios.json"
 
